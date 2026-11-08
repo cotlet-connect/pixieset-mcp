@@ -1,0 +1,29 @@
+[project]
+name = "pixieset-mcp"
+version = "1.1.0"
+description = "Connect Pixieset to Claude Code, ChatGPT and any AI agent through Cotlet.dev, a hosted MCP server. No Pixieset API key needed."
+readme = "README.md"
+license = "Elastic-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Cotlet.dev", email = "contact@cotlet.dev" }]
+keywords = ["pixieset", "pixieset api", "pixieset mcp", "mcp server", "claude", "chatgpt", "ai agent", "cotlet"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Office/Business"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://cotlet.dev/integrations/pixieset-api-mcp-server?utm_source=pypi&utm_medium=package&utm_campaign=pixieset"
+Source = "https://github.com/cotlet-connect/pixieset-mcp"
+
+[project.scripts]
+pixieset-mcp = "pixieset_agent:main"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel.force-include]
+"pixieset_agent.py" = "pixieset_agent.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["pixieset_agent.py", "README.md", "LICENSE", "mcp.json", "Dockerfile", "glama.json", "skills", "examples", ".cursor"]
