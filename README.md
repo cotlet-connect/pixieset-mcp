@@ -105,6 +105,7 @@ Pixieset's Apps & Plugins page lists no ChatGPT or Claude integration. Cotlet.de
 
 - [Pixieset on Cotlet.dev](https://cotlet.dev/integrations/pixieset-api-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=pixieset&utm_content=find)
 - [PyPI package pixieset-mcp](https://pypi.org/project/pixieset-mcp/)
+- [Odel](https://odel.app/modules/cotlet/pixieset)
 - [Step-by-step guide (PDF) on Internet Archive](https://archive.org/details/cotlet-connect-pixieset-to-ai-agents-guide)
 
 ## Also works with
